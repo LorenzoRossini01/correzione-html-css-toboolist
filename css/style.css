@@ -1,0 +1,145 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f8f9;
+}
+
+/* HEADER */
+.page-header {
+  background-color: white;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 15px;
+  margin-bottom: 80px;
+}
+
+.header-logo,
+.header-title {
+  display: inline;
+  vertical-align: middle;
+}
+
+.header-title {
+  font-weight: 700;
+}
+
+/* CARD */
+.card {
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.card-header,
+.card-body {
+  padding: 20px;
+}
+
+.card-header {
+  border-bottom: 3px solid #f6f8f9;
+}
+
+.card-button {
+  padding: 5px 10px;
+  border: 2px solid currentColor;
+  color: #47adf1;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-button.add-task {
+  background-color: #47adf1;
+  color: white;
+  border-color: #47adf1;
+}
+
+.card-button.add-section {
+  background-color: white;
+  color: rgb(215, 215, 215);
+}
+
+/* CARD LIST */
+.card-section {
+  margin: 30px 10px;
+}
+
+.card-title::before {
+  content: "\2b9f ";
+}
+
+ul.card-list {
+  list-style: none;
+}
+
+li.list-item {
+  margin: 20px 0;
+}
+
+li.list-item::before {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  display: inline-block;
+}
+
+li.list-item.item-undone::before {
+  content: "\2717";
+  color: red;
+}
+
+li.list-item.item-done::before {
+  content: "\2713";
+  color: green;
+}
+
+.item,
+.list-item-text,
+.badge {
+  vertical-align: middle;
+}
+
+.badge {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 15px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge.editorial {
+  background-color: #42aaea;
+}
+
+.badge.q1-goals {
+  background-color: #9c72e4;
+}
+
+.badge.recruiting {
+  background-color: #5f9ea0;
+}
+
+.badge.mobile {
+  background-color: #f29e33;
+}
+
+.badge.website {
+  background-color: #d862a1;
+}
+
+.badge.sales {
+  background-color: #b0c926;
+}
